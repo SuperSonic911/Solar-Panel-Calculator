@@ -1,0 +1,75 @@
+.body{
+    background-image:url("../static/edited\ with\ python.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0px;
+    
+}
+
+.h1{
+    font-size: 21px;
+    text-align: center;
+    color:#f1e20bde;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.p1{
+    text-align: left;
+    font-size: 15px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.container {
+    display: flex;
+}
+
+.img1{
+    padding-left: 5%;
+    width: 75%;
+    height: 150px;
+}
+
+.h2{
+    font-size: 21px;
+    color:#f1e20bde;
+    text-shadow: 1px 1px 5px #000000;
+    padding-left: 9%;
+}
+
+.img2{
+    padding-left: 5%;
+    width: 2600px;
+    height: 200px;
+}
+
+.img3{
+    padding-left: 5%;
+    width: 500px;
+    height:370px;
+}
+
+.footer{
+    font-size: 13px;
+    color: rgb(181, 179, 185);
+    text-align: center;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.h3{
+    font-size: 21px;
+    color: rgb(244, 244, 245);
+    text-align: center;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.gradient1{
+    background-image: linear-gradient(to bottom right, rgb(221, 214, 13), rgb(11, 102, 3), rgb(125, 7, 188));
+}
+
+.gradient2{
+    margin:0;
+    padding:0;
+    height: 650px;
+    background-image: linear-gradient(to bottom right, rgb(13, 155, 221), rgb(0, 42, 255), rgb(7, 188, 122));
+
+}   
