@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<body class="body">
+    <h1 class="h1">Implement a Solar Power System For Your House Now!</h1>
+    <div class="container"> 
+        <p class="p1">
+            The amount of sunlight that strikes the earth's surface
+            in 90 minutes is enough to handle the entire world's energy consumption for a full year!
+            As of 2021, solar power generates 4% of the world's electricity, The International Energy Agency 
+            said that under its "Net Zero by 2050" scenario solar power would contribute 
+            about 20% of worldwide energy consumption, and would be the world's largest source of electricity.
+            Millions of installations and gigawatt-scale photovoltaic power stations have been and are being built. 
+            Solar PV has rapidly become a viable low-carbon technology, and since 2020, 
+            provides the cheapest source of electricity in history.
+        </p>
+    </div>
+
+    <h2 class="h2">There Are Two Technologies To Harness Solar Energy:</h2>
+    <div class="container">
+        <p class="p1">
+            1- Photovoltaic (PV) systems use solar panels, either on rooftops or in ground-mounted solar farms,
+            converting sunlight directly into electric power. They are made of semiconductor materials that absorb 
+            the photons emitted by the sun and generate a flow of electrons.  When the photons strike a semiconductor 
+            material like silicon , they release the electrons from its atoms, leaving behind a vacant space. 
+            The stray electrons move around randomly looking for another “hole” to fill.
+            When the electrons are excited by the photons, they are swept to the n-side by an electric field,
+            while the holes drift to the p-side. The electrons and holes are directed to the electrical contacts 
+            applied to both sides before flowing to the external circuit in the form of electrical energy.
+            This produces direct current.
+        </p>
+        <img class="img1" alt="solar" src="/static/p1.jpg">
+    </div>
+
+    <br>
+
+    <div class="container">
+        <p class="p1">
+            2- Concentrated solar power (CSP) uses mirrors or lenses to concentrate sunlight to extreme heat to 
+            eventually make steam, which is converted into electricity by a turbine.
+            Electricity is generated when the concentrated light is converted to heat (solar thermal energy),
+            which drives a heat engine (usually a steam turbine) connected to an electrical power
+            generator or powers a thermochemical reaction. CSP represented less than 2% of worldwide installed 
+            capacity of solar electricity plants due to technical difficulties and high prices.
+        </p>
+        <img class="img2" alt="csp" src="/static/csp-696x478.jpg">
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div>
+            <p class="p1">
+                You're likely most familiar with PV, which is utilized in solar panels. When the sun shines onto
+                a solar panel, energy from the sunlight is absorbed by the PV cells in the panel. 
+                This energy creates electrical charges that move in response to an internal electrical field 
+                in the cell, causing electricity to flow.
+            </p>
+            <p class="p1">
+                Today we will build an ON-grid PV system for your house, 
+                an ON-grid system basically means system that works along with the grid
+                This means that any excess or deficiency of power can be fed to the grid through net metering.
+                You will always have power either from the solar system or from the grid, There will be no batteries.
+                In an on-grid solar system, solar panels will continue to produce power during the day. 
+                This power can either be used instantly or exported to the grid with no backup for power outages.
+            </p>
+            <p class="p1">
+                The array of a photovoltaic system, or PV system, produces direct current (DC) power which fluctuates
+                with the sunlight's intensity. For practical use this usually requires conversion to alternating 
+                current (AC), through the use of inverters.Multiple solar cells are connected inside modules.
+                Modules are wired together to form arrays, then tied to an inverter, 
+                which produces power at the desired voltage, and for AC, the desired frequency/phase.
+            </p>
+        </div>
+        <img class="img3" alt="csp" src="/static/BGE_SolarPage_05.jpg">
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-primary" href="/build" role="button">Start Implementing Now!</a>
+    </div>
+    <br>
+    <footer class ="footer">Copyright &#169; Sameh Hasan</footer>
+    <footer class ="footer">Email: Eng.Sameh.Abdelmoaty@Gmail.com</footer>
+</body>
+
+{% endblock %}

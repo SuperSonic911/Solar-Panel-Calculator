@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Build
+{% endblock %}
+
+{% block main %}
+<div class="gradient2">  
+    <a href="/home.html" class="btn btn-success" role="button" data-bs-toggle="button">Back to Home Page</a>
+    <div align="center" >  
+        <form action="/build" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Average Energy Consumption/year</label>
+                <br>
+                <input name="E" autocomplete="off" autofocus class="form-control mx-auto w-auto" placeholder="Energy in kWh">
+            </div>
+            <br>
+            
+            <div class="form-group">
+                <label for="countries">Your Country</label>
+                <br>
+                <select name="country">
+                    <option>Select your country</option>
+                    {% for country in countries_array %}
+                    <option value={{country}}>{{country}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-warning">Show Results!</button>
+        </form>
+    </div>
+</div>  
+{% endblock %}

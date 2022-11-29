@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+{% block main %}
+<div class="gradient1">
+    <a href="/home.html" class="btn btn-primary" role="button" data-bs-toggle="button">Back to Home Page</a>
+    <div align="center">
+        <h1 class="h3">Model of Solar panel used: Panasonic EverVolt EVPV370</h1>
+        <img alt="solar" src="/static/solarcell.png">
+        <br>
+        <p class="h3">Number of cells = {{noCells}}</p>
+        <p class="h3">They will be connected as {{series}} panels in series and {{parallel}} in parallel</p>
+        <p class="h3">Total area required to fit all the cells:</p>
+        <p class="h3">Total width is {{totalWidth}} meters and Total length is {{totalLength}} meters</p>
+        <p class="h3">Energy generated from cells : {{Egenerated}} kwh</p>
+        <a href="https://na.panasonic.com/us/energy-solutions/solar/evervolttm-modules/evervolttm-series-module"
+        class="btn btn-primary" role="button" data-bs-toggle="button">Panasonic's website</a>
+        
+        <br>
+        <br>
+
+        <h2 class="h3">Model of inverter used: Schneider electric PVSNVC5000</h2>
+        <img alt="solar" src="/static/inverter.jpg">
+        <br>
+        <br>
+        <a href="https://www.se.com/ww/en/product/PVSNVC5000/conext-rl-5kva-inverter-ip65-without-dc-disconnect/"
+        class="btn btn-primary" role="button" data-bs-toggle="button">Shneider's website</a>   
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
